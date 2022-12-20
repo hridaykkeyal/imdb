@@ -44,7 +44,7 @@ for index in range(0, len(movies)):
     imdb.append(data)
 
 for item in imdb:
-    print item['rank'], '-', item['movie_title'], '-', item['year'], '-','Starring:', item['cast']
+    print(item['rank'], '-', item['movie_title'], '-', item['year'], '-','Starring:', item['cast'])
 
 def rank():
     rank_search = int(input('\nEnter rank: '))
@@ -65,7 +65,7 @@ def year():
     choose()
 
 def cast():
-    cast_search = raw_input('\nEnter name of cast: ')
+    cast_search = input('\nEnter name of cast: ')
 
     for item in imdb:
         if cast_search in item['cast']:
